@@ -30,6 +30,11 @@ COMPOSER| DOM PDF | BLADE | DOCKER | MAILTRAP
 * Abrir Terminal
   * php artisan serve
 ## Rotas da Aplicação 
+| Método | Rota             | Controlador/Método  | Middleware |
+|--------|------------------|---------------------|------------|
+| POST   | /users           | UserController@store | -          |
+| POST   | /login           | AuthController@store | -          |
+
 | Método | Rota                             | Controlador/Método              | Middleware                   |
 |--------|----------------------------------|---------------------------------|------------------------------|
 | GET    | /dashboard                       | DashboardController@index       | auth:sanctum                 |
@@ -44,6 +49,14 @@ COMPOSER| DOM PDF | BLADE | DOCKER | MAILTRAP
 | GET    | /students/{id}                   | StudentController@show          | auth:sanctum                 |
 | POST   | /workouts                        | WorkoutController@store         | auth:sanctum                 |
 | GET    | /students/{id}/workouts          | WorkoutController@index         | auth:sanctum                 |
-| POST   | /users                           | UserController@store            | -                            |
-| POST   | /login                           | AuthController@store            | -                            |
 
+
+
+# Api em Funcionamento !
+
+*Cadastro de usuário - Response 404 em caso de erro 
+
+<div>
+<img src="https://github.com/jlaindorf/files/blob/main/cadastro%20de%20usuario.png" width="500" alt="cadastro de usuario">
+ <img src="https://github.com/jlaindorf/files/blob/main/response%20usuario.png" width="500" alt="cadastro de usuario">
+</div>
